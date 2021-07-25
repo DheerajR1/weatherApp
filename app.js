@@ -4,7 +4,7 @@ window,addEventListener('load',()=> {
     let temperatureDesc = document.querySelector(".temp-description");
     let temperatureDegree = document.querySelector(".temp-degree");
     let locationTimezone = document.querySelector(".location-timezone");
-    let tempSec = document.querySelector(".degreeSec");
+    let tempSec = document.querySelector(".degreeSec"); 
     const tempSpan = document.querySelector(".degreeSec span");
 
     if(navigator.geolocation) {
