@@ -12,13 +12,13 @@ window,addEventListener('load',()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             console.log(lat, long);
-            const proxy = `https://cors-anywhere.herokuapp.com/`;
+            const proxy = `https://cors-dextrousmonk.herokuapp.com/`;
         
          /*  if running locally add a proxy to bypass CORS issue */
-       //   const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
+          const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
            
          /* if deployed use without proxy */
-            const api = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
+       //     const api = `https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
             console.log(api);
            
             fetch(api).then(response => {
