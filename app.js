@@ -12,7 +12,7 @@ window,addEventListener('load',()=> {
             long = position.coords.longitude;
             lat = position.coords.latitude;
             console.log(lat, long);
-            const proxy = `https://cors-dextrousmonk.herokuapp.com/`;
+            const proxy = `https://cors-dextrousmonk.herokuapp.com/`; // proxy served on heroku
         
          /*  if running locally add a proxy to bypass CORS issue */
           const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
